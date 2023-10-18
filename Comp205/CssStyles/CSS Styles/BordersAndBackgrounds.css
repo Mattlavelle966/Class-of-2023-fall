@@ -1,0 +1,20 @@
+html
+{
+    background-color:green;
+}
+body
+{
+    background-color: lightgreen;
+    margin-left:5em;
+    margin-right:5em;
+    margin-top:4.5em;
+    margin-bottom:4.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left:1.5em;
+    border: 0.1em solid purple;
+    /* if you aren't sure what something does, set it to a high number */
+    border-radius: 2em;
+    box-shadow: 0.4em 0.4em 0 0 purple;
+}
+ 

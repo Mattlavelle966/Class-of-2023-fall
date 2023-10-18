@@ -1,0 +1,16 @@
+body {
+	font-size:large; 
+	color: blue; 
+	background-color: aqua;
+	 
+}
+p {
+	font-size:medium; 
+	color:green; 
+	background-color:lightpink;
+}
+footer {
+	font-size:small;
+	background-color:moccasin;
+}
+ 
