@@ -1,0 +1,39 @@
+mysql> use lab5;
+Database changed
+mysql> create table provinces (
+    -> provinceID               int             primary key auto_increment,
+    -> provinceName     varchar(55)             not null,
+    -> provinceAvgAge   decimal(6.2),
+    -> provincePop      bigint
+    -> );
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> describe provinces;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| provinceID     | int          | NO   | PRI | NULL    | auto_increment |
+| provinceName   | varchar(55)  | NO   |     | NULL    |                |
+| provinceAvgAge | decimal(6,0) | YES  |     | NULL    |                |
+| provincePop    | bigint       | YES  |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('Ontario', '40.4', '15122900');
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('Quebec', '43.1', '8683200');
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('BC', '42', '5344900');
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('Alberta', '38.1', '4516300');
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('Manitoba', '37.7', '1399900');
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('Saskatchewan', '38.1', '1189200');
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('Nova Scotia', '38.2', '1009600');
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('New Brunswick', '45.7', '797500');
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('Newfoundland and Labrador', '47.8', '520300');
+INSERT INTO `lab5`.`provinces` (`provinceName`, `provinceAvgAge`, `provincePop`) VALUES ('Prince Edward Island', '41.7', '168400');
+
+SELECT provinceName, provinceID FROM lab5.provinces
+order by provinceID asc;
+
+SELECT provinceName, provinceAvgAge,provincePop FROM lab5.provinces
+where provinceName like 'n%';
+
+SELECT provinceName, provincePop FROM lab5.provinces
+where provincePop > 5000000;
