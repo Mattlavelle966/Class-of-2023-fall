@@ -1,0 +1,23 @@
+.top {
+	background-color:lightpink;
+	font-size:3em; /* xx-large isn't big enough */
+	border: 0.1em dashed navy;
+	/* Add 6 lines of code */
+	
+}
+
+.main {
+	background-color:lightgreen;
+	border:0.1em solid black;
+	/* Add 5 lines of code */
+	
+}
+
+.leopard {
+	/* Add 2 lines of code */
+	
+}
+
+.panther {
+	/* Add 1 line of code */
+}

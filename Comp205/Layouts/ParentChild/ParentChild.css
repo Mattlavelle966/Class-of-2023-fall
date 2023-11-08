@@ -1,0 +1,21 @@
+body
+{
+    background-color: lightcoral;
+    color:lightcyan;
+    font-size:1.5em;
+}
+.mainSection 
+{
+    background-color: aqua;
+    color:black;
+    width:50%; 
+}
+.art
+{ 
+    border: 0.3em dotted black;
+    width: 75%;
+    background-color:#e94949;
+    color:black;
+	
+}
+ 

@@ -1,0 +1,34 @@
+body
+{
+	background-color:salmon;
+	font-size:1.5em;
+}
+.flexcontainer
+{
+	/* This container will be a flex container. This means
+        flex items are beside each other even though 
+        flexcontainer is a div and div’s are block level. */
+	display:flex; 
+	/* flex-direction:row indicates that flow is left to right, not 
+	   top to bottom. That is, flex items will be rendered (drawn) 
+        side by side. Row is the default (in for readability).  */
+	flex-direction:row;
+	/* By default, all flex items will try to fit on one line. Flex
+	   wrap tells the browser to wrap the items as needed. Without 
+        wrap, the browser will display a horizontal scroll bar. */
+	flex-wrap:wrap;   
+}
+
+.flexitemExA
+{
+	background-color:teal;
+	margin-right:2em;
+}
+.flexitemExB
+{
+	flex:1;
+	background-color:teal;
+	margin-right:2em;
+}	
+
+ 

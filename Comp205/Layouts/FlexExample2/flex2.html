@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex2</title>
+  <link rel="stylesheet" href="flex2.css">
+</head>
+<body>
+<h1>Flex Example 2</h1>
+<p>The flex items have flex:1. Each flex item (except yellow marten) is the same width 
+	and the space is filled. As the window gets smaller, there comes a 
+	point where that isn't feasible. Flex then tries to appropriately distribute
+	the flex items.</p>
+<p>The bigbox flex item has flex:2.75. This means bigbox is 2.75 times the 
+   size of the other flex items. As you resize smaller, the 2.75 isn't feasible 
+   and flex redistributes. The space is always filled.</p>
+<p>Note that the browser is making the decision based on what it thinks is 
+   best for the current device.</p>
+</p>
+<!-- Create a flex container to encompass the flex items -->
+<div class="flexcontainer">
+    <div class="flexitem">langur</div>
+	 <div class="flexitem">sloth</div>
+    <div class="flexitem">gaur</div>
+    <div class="flexitem">mongoose</div>
+    <div class="flexitem">buffalo</div>
+	 <div class="flexitem">linsang</div>
+  	<div class="flexitem bigbox">yellow marten</div>
+</div>
+</body>
+</html>

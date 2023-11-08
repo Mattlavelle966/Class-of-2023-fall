@@ -1,0 +1,38 @@
+<!doctype html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex1</title>
+  <link rel="stylesheet" href="flex1.css">
+</head>
+<body>
+<h1>Flex Example 1</h1>
+<h2>Example A</h2>
+<p>Each flex item is the width of its contents.</p>
+<div class="flexcontainer">
+    <div class="flexitemExA">langur</div>
+	<div class="flexitemExA">sloth</div>
+    <div class="flexitemExA">gaur</div>
+    <div class="flexitemExA">mongoose</div>
+    <div class="flexitemExA">buffalo</div>
+	<div class="flexitemExA">linsang</div>
+	<div class="flexitemExA">yellow marten</div>
+</div>
+
+<h2>Example B</h2>
+<p>The flex item style for these has flex:1. Each flex item is the same width 
+   and the space is filled. As the window gets smaller, there comes a 
+   point where that isn't feasible. Flex then distributes the flex items as 
+   deemed appropriate for the device.</p>
+<!-- Create a flex container to encompass the flex items -->
+<div class="flexcontainer">
+    <div class="flexitemExB">langur</div>
+	<div class="flexitemExB">sloth</div>
+    <div class="flexitemExB">gaur</div>
+    <div class="flexitemExB">mongoose</div>
+    <div class="flexitemExB">buffalo</div>
+	<div class="flexitemExB">linsang</div>
+	<div class="flexitemExB">yellow marten</div>
+</div>
+</body>
+</html>
