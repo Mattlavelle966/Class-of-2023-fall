@@ -2,6 +2,10 @@
 	background-color:lightpink;
 	font-size:3em; /* xx-large isn't big enough */
 	border: 0.1em dashed navy;
+	width: 30%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	text-align: center;
 	/* Add 6 lines of code */
 	
 }
@@ -9,15 +13,23 @@
 .main {
 	background-color:lightgreen;
 	border:0.1em solid black;
+	width: 70%;
+	margin: 0 auto;
+	margin-left: 20em;
+	padding-left:1em;
+	padding-right:1em;
 	/* Add 5 lines of code */
 	
 }
 
 .leopard {
-	/* Add 2 lines of code */
+	border: solid .2em black;
+	margin-left: 1em;	/* Add 2 lines of code */
 	
 }
 
 .panther {
+	border: solid .2em black;
+	margin-left: 2em;
 	/* Add 1 line of code */
 }
